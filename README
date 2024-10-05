@@ -12,9 +12,9 @@ My plan is to work on improving the program to support bigger and oddly shaped r
 In addition, any suggestions for rooms I should make and add to the Backrooms is most welcome
 
 HOW TO USE
-1.) Download the zip
-2.) Extract the files
-3.) Move all the files in the BackroomsLocalPrefabs into your LocalPrefabs folder (C:\Users\[YourUser]\AppData\Roaming\7DaysToDie\LocalPrefabs).
+1.) Download the BackroomsGen.exe and BackRoomsLocalPrefabs.zip
+2.) Extract the BackRoomsLocalPrefabs.zip
+3.) Move all the files in BackroomsLocalPrefabs into your LocalPrefabs folder (C:\Users\[YourUser]\AppData\Roaming\7DaysToDie\LocalPrefabs).
 4.) Open 7 Days to Die and create a new world. Be sure to remember/record what is used for world name (Ex: Hekofato County) and game name (Ex: My Game).
 5.) Once the world is created you can exit the world.
 6.) Double-click to run the BackroomsGen.exe, it should open a console window.
