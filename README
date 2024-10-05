@@ -1,1 +1,49 @@
-#readme file
+TITLE
+Backrooms
+
+DESCRIPTION
+This project will create a randomly generated Backrooms themed maze and survival experience in your 7 Days to Die world.
+
+This project contains two important files. The first is the BackroomsGen.exe which is the program that generates the backrooms. The second is the BackroomsLocalPrefabs folder. 
+This folder contains all the POIs used in this project as well as an additional RoomsData.txt file used by BackroomsGen.exe to generate.
+
+Currently, the maze is made up of 7x7 (x,z) custom POIs. This can be restrictive to creativity of what "Rooms" I can include into the Backrooms.
+My plan is to work on improving the program to support bigger and oddly shaped rooms.
+In addition, any suggestions for rooms I should make and add to the Backrooms is most welcome
+
+HOW TO USE
+1.) Download the zip
+2.) Extract the files
+3.) Move all the files in the BackroomsLocalPrefabs into your LocalPrefabs folder (C:\Users\[YourUser]\AppData\Roaming\7DaysToDie\LocalPrefabs).
+4.) Open 7 Days to Die and create a new world. Be sure to remember/record what is used for world name (Ex: Hekofato County) and game name (Ex: My Game).
+5.) Once the world is created you can exit the world.
+6.) Double-click to run the BackroomsGen.exe, it should open a console window.
+7.) Follow the prompts the console window gives until it states you can close the window.
+8.) In 7 Days to Die, create a new world using the world and game name you used before
+9.) Enjoy :)
+
+CREDITS
+Just-Mir-Sir on Git and some variation of Mr. Sir elsewhere
+
+LICENSE
+MIT License
+
+Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
