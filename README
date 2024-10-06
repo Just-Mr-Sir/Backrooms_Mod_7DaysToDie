@@ -22,6 +22,10 @@ HOW TO USE
 8.) In 7 Days to Die, create a new world using the world and game name you used before
 9.) Enjoy :)
 
+CHANGING SPAWN WEIGHTS
+If you feel as though one type of room is spawning too often, or not enough, you can change these weights yourself.
+To do so, open the file called "RoomData.txt". It should be in your LocalPrefabs folder. At the top of the file there is a key showing what values change to change the weight.
+
 CREDITS
 Just-Mir-Sir on Git and some variation of Mr. Sir elsewhere
 
