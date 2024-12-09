@@ -4,27 +4,31 @@ Backrooms
 DESCRIPTION
 This project will create a randomly generated Backrooms themed maze and survival experience in your 7 Days to Die world.
 
-This project contains two important files. The first is the BackroomsGen.exe which is the program that generates the backrooms. The second is the BackroomsLocalPrefabs folder. 
-This folder contains all the POIs used in this project as well as an additional RoomsData.txt file used by BackroomsGen.exe to generate.
+This project contains two important files. The first is the Backrooms.zip file which contains the .dll, .pdb, and .xml file you'll put in your mods folder. 
+The second is the BackroomsPrefabs.zip file which contains all of the prefab files you'll need to put in your LocalPrefabs folder.
 
-Currently, the maze is made up of 7x7 (x,z) custom POIs. This can be restrictive to creativity of what "Rooms" I can include into the Backrooms.
-My plan is to work on improving the program to support bigger and oddly shaped rooms.
-In addition, any suggestions for rooms I should make and add to the Backrooms is most welcome
+Currently, the maze is made up of 7x7 (x,z) custom POIs. These pieces are then generated together in a traversable way to create the maze.
+
+Generation of the Backrooms will not affect existing POIs you have in your world (assuming the POI name doesn't begin with br_)
+
+INSTALLATION
+1.) Download the Backrooms.zip and BackroomsPrefabs.zip files
+2.) Unzip the Backrooms.zip
+3.) Put the output Backrooms folder into your Mods folder (typically located at C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die\Mods)
+4.) Unzip the BackroomsPrefabs.zip file
+5.) Place the contents of the output folder into your LocalPrefabs folder (typically located at C:\Users\[YourUsername]\AppData\Roaming\7DaysToDie\LocalPrefabs)
 
 HOW TO USE
-1.) Download the BackroomsGen.exe and BackRoomsLocalPrefabs.zip
-2.) Extract the BackRoomsLocalPrefabs.zip
-3.) Move all the files in BackroomsLocalPrefabs into your LocalPrefabs folder (C:\Users\[YourUser]\AppData\Roaming\7DaysToDie\LocalPrefabs).
-4.) Open 7 Days to Die and create a new world. Be sure to remember/record what is used for world name (Ex: Hekofato County) and game name (Ex: My Game).
-5.) Once the world is created you can exit the world.
-6.) Double-click to run the BackroomsGen.exe, it should open a console window.
-7.) Follow the prompts the console window gives until it states you can close the window.
-8.) In 7 Days to Die, create a new world using the world and game name you used before
-9.) Enjoy :)
-
-CHANGING SPAWN WEIGHTS
-If you feel as though one type of room is spawning too often, or not enough, you can change these weights yourself.
-To do so, open the file called "RoomData.txt". It should be in your LocalPrefabs folder. At the top of the file there is a key showing what values change to change the weight.
+1.) Run the game
+2.) Create a new world with a unique world generation name (different than game name). Keep record of the world generation and game name as you do so (you'll need it later).
+3.) After you've spawned into the world, exit it
+4.) In the main menu, open the console with F1 and run the following command: deleteRegions [WorldGenName] [GameName]. Example, deleteRegions OldHonihebuCounty myTestWorld. The WorldGenName should have no spaces.
+      This command will delete all of the region files for the given world. If this is not done, once you've generated the maze, it will not appear in areas of your world that the region files exist for.
+5.) In the main menu, open the console with F1 and run the following command: genbackrooms [WorldGenName] [Size]. This command will generate the maze and write it to the corresponding prefabs.xml file.
+      The size dictates the square dimensions that the maze will generate within. So, for a 2048x2048 world a size of 2000 would generate a maze almost the size of the entire world. 
+      Example, genbackrooms OldHonihebuCounty 2000. The generation should take a few or several seconds at most.
+6.) The console will output how many rooms were generated. If you would like to regenerate the maze you can simply run the genbackrooms command again. Just be sure to delete the region files if you enter the world and explore first.
+7.) Enjoy :)
 
 CREDITS
 Just-Mir-Sir on Git and some variation of Mr. Sir elsewhere
