@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35325.158
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackroomsGenV1_1NET4_5", "BackroomsGenV1_1NET4_5.csproj", "{BE7E9F81-DAB1-415F-BAF8-CFA5EEA25AE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE7E9F81-DAB1-415F-BAF8-CFA5EEA25AE9}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7E9F81-DAB1-415F-BAF8-CFA5EEA25AE9}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{BE7E9F81-DAB1-415F-BAF8-CFA5EEA25AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7E9F81-DAB1-415F-BAF8-CFA5EEA25AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D9ABF4D-BAF2-4F08-90B8-4E132C4E6096}
+	EndGlobalSection
+EndGlobal
