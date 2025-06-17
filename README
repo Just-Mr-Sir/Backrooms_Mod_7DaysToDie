@@ -4,43 +4,20 @@ Backrooms
 =====DESCRIPTION=====
 This mod will create procedurally generated Backrooms in your 7 Days to Die world.
 
-This project contains two important files. The first is the BackroomsMod.zip file which, when extracted, will be the folder you'll put in your mods folder. This folder contains the .dll, .pdb, and .xml files for the mod.
-The second is the BackroomsLocalPrefabs.zip file which contains all of the prefab files you'll need to put into your LocalPrefabs folder.
-
-Currently, the maze is made up of 7x7 (x,z) custom POIs. These pieces are then generated together in a traversable way to create the maze.
-
-Generation of the Backrooms will not affect existing POIs you have in your world (assuming the POI name doesn't begin with br_)
-
 =====INSTALLATION=====
-1.) Download the BackroomsMod.zip and BackroomsLocalPrefabs.zip files
-2.) Unzip the BackroomsMod.zip
-3.) Put the extracted BackroomsMod folder into your Mods folder (typically located at C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die\Mods)
-4.) Unzip the BackroomsLocalPrefabs.zip file
-5.) Place the contents of the output folder into your LocalPrefabs folder (typically located at C:\Users\[YourUsername]\AppData\Roaming\7DaysToDie\LocalPrefabs).
-      This can be done by selecting of the files in the folder and pressing Ctrl + C (copy), and then entering your LocalPrefabs folder and pressing Ctrl + V (paste).
-      If the LocalPrefabs folder does not exist, simply navigate to C:\Users\[YourUsername]\AppData\Roaming\7DaysToDie and create a new folder named LocalPrefabs.
+1.) Download the Mod.zip and LocalPrefabs.zip files
+2.) Unzip the Mod.zip file and put the extracted folder in place of your Mods folder (typically located at C:\Program Files (x86)\Steam\steamapps\common\7 Days To Die\Mods)
+3.) Unzip the LocalPrefabs.zip file and put the extracted folder in place of your LocalPrefabs folder (typically located at C:\Users\[YourUsername]\AppData\Roaming\7DaysToDie\LocalPrefabs).
+4.) Unzip the BackroomsWorld.zip file and put the extracted folder into your GeneratedWorlds folder (typically located at C:\Users\[YourUsername]\AppData\Roaming\7DaysToDie\GeneratedWorlds).
 
 =====HOW TO USE=====
 1.) Run the game
-2.) Create a new world with a unique world generation name (different than game name). Keep record of the world generation name and game name as you do so (you'll need it later).
-      It is recommended that you disable Horde Night from occuring as the zombies won't spawn in the backrooms but on the surface of the world above you.
-3.) After you've spawned into the world, exit to the main menu
-4.) In the main menu, open the console with F1 and run the following command: deleteRegions [WorldGenName] [GameName]. Example, deleteRegions OldHonihebuCounty myTestWorld. The WorldGenName should have no spaces.
-      This command will delete all of the region files for the given world. If this is not done, once you've generated the backrooms, it will not appear in areas of your world that the region files exist for.
-5.) In the main menu, open the console with F1 and run the following command: genbackrooms [WorldGenName] [Size]. This command will generate the backrooms and write to the corresponding prefabs.xml file.
-      The size dictates the square dimensions that the maze will generate within. So, for a 2048x2048 world a size of 2000 would generate a maze almost the size of the entire world. 
-      Example, genbackrooms OldHonihebuCounty 2000. The generation should take only a few seconds or several seconds at most.
-6.) The console will output how many rooms were generated and how long each step of the generation took. If you would like to regenerate the maze you can simply run the genbackrooms command again. 
-      Just be sure to delete the region files if you enter the world and explore first.
-7.) Enjoy :)
+2.) In the main menu, run the command "genBackrooms". This may take a few moments.
+3.) Create a new world and be sure to set the Game World to "Backrooms World".
+4.) That is all, enjoy :)
 
 =====IMPORTANT NOTES=====
-In order to enter the backrooms there exists a "noclipBR" command. If you are on the surface of the world when you run this command you will be teleported into the backrooms.
-      If you are in the backrooms when you run this command you will be teleported to the surface of the world.
-If have no interest in using the noclipBR command because you plan on making your own entrance/exit into the backrooms or plan on using the "dm" command and 'Q' to fly into it, then this mod is no longer needed.
-      In other words, you do not to run this mod after the backrooms has been added to your world except if you want to use the "noClipBR" command.
-
-Disable Horde Night because the zombies will not spawn in the backrooms but on the surface of the world above you.
+Horde Night currently does not work as there are no blocks for them to spawn on.
 
 =====CREDITS=====
 Just-Mir-Sir on Git and some variation of Mr. Sir elsewhere
@@ -48,7 +25,7 @@ Just-Mir-Sir on Git and some variation of Mr. Sir elsewhere
 =====LICENSE=====
 MIT License
 
-Copyright (c) 2024 Just-Mr-Sir
+Copyright (c) 2025 Just-Mr-Sir
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
